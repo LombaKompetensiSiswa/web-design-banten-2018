@@ -1,0 +1,10 @@
+RewriteEngine On
+
+RewriteRule ^login$ login.php [L]
+RewriteRule ^login/$ login.php [L]
+
+RewriteRule ^register$ register.php [L]
+RewriteRule ^register/$ register.php [L]
+
+RewriteRule ^daftar_buku$ daftar_buku.php [L]
+RewriteRule ^daftar_buku/$ daftar_buku.php [L]

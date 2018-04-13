@@ -1,0 +1,229 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Layanan e-Resources Perpustakaan Nasional Republik Indonesia</title>
+<link href="Layanan%20e-Resources%20Perpustakaan%20Nasional%20Republik%20Indonesia_files/style.css" rel="stylesheet" type="text/css">
+
+<link type="text/css" href="Layanan%20e-Resources%20Perpustakaan%20Nasional%20Republik%20Indonesia_files/jquery-ui-1.css" rel="stylesheet">	
+<script type="text/javascript" src="Layanan%20e-Resources%20Perpustakaan%20Nasional%20Republik%20Indonesia_files/jquery-1.js"></script>
+<script type="text/javascript" src="Layanan%20e-Resources%20Perpustakaan%20Nasional%20Republik%20Indonesia_files/jquery-ui-1.js"></script>
+
+<script type="text/javascript">
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+var errfound = false;
+
+function error(elem, text) {
+	if (errfound) return;
+	window.alert(text);
+	elem.select();
+	elem.focus();
+	errfound = true;
+}
+
+function doLogin(){
+	//this.action.value = "login";
+	//loginCheck(this);
+	
+	var form = document.createElement("form");
+	var myForm = document.form1;
+	myForm.action.value = "login";
+	form.submit.apply(myForm);
+	
+}
+
+function doReset(){
+	//this.action.value = "";
+	var form = document.createElement("form");
+	var myForm = document.form1;
+	myForm.action.value = "";
+}
+
+function loginCheck(f) {
+	errfound = false;
+	if (f.nomor_anggota.value == "")
+		error(f.nomor_anggota,"Terjadi Kesalahan! Ruas Nomor Anggota harus diisi");
+
+	if (f.password.value == "")
+	   error(f.password,"Terjadi Kesalahan! Ruas Password harus diisi");
+		
+  	return ! errfound;
+}
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onload=" doReset();MM_preloadImages('images/image_login2.jpg','images/help2.jpg')" topmargin="0" rightmargin="0" marginwidth="0" marginheight="0" leftmargin="0" bottommargin="0">
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+  <tbody><tr>
+    <td align="center" valign="top"><table width="950" cellspacing="0" cellpadding="0" border="0">
+      <tbody><tr>
+        <td>
+                </td>
+      </tr>
+    </tbody></table></td>
+  </tr>
+  <tr>
+    <td align="center" valign="top" background="Layanan%20e-Resources%20Perpustakaan%20Nasional%20Republik%20Indonesia_files/image_eresources_01_r1_c1.jpg"><table align="center" width="950" cellspacing="0" cellpadding="0" border="0">
+      <tbody><tr>
+        <td colspan="2" align="left" valign="middle"></td>
+      </tr>
+      <tr>
+        <td height="115" align="left" width="786" valign="middle"><div align="left"><a href="http://www.perpusnas.go.id/"><img src="Layanan%20e-Resources%20Perpustakaan%20Nasional%20Republik%20Indonesia_files/image_logo_pnri.jpg" alt="" height="69" width="555" border="0"></a></div></td>
+        <td height="115" width="164" bgcolor="#FFFFFF"><div align="center"><a href="https://docs.google.com/forms/d/1hKDW4bH73Eryg46Cl099ptrkZVi8iYZdvEnk2LKNIrU/viewform" target="_blank"><img src="Layanan%20e-Resources%20Perpustakaan%20Nasional%20Republik%20Indonesia_files/survey.jpg" height="100" width="100"></a></div></td>
+      </tr>
+      <tr>
+        <td colspan="2" align="left" valign="top" bgcolor="#ECFAFB"><table width="100%" cellspacing="0" cellpadding="0" border="0">
+          <tbody><tr>
+            <td align="left" valign="top" bgcolor="#ABE7EF"><table width="100%" cellspacing="0" cellpadding="15" border="0">
+              <tbody><tr>
+                <td class="xbig" align="center" valign="middle" bgcolor="#3366CC">e-Resources</td>
+              </tr>
+              <tr>
+                <td class="medium">Untuk memenuhi kebutuhan pemustaka, 
+kami melanggan berbagai bahan perpustakaan digital online (e-Resources) 
+seperti jurnal , ebook, dan karya-karya referensi online lainnya.<br> <br>
+                  Silahkan mengetikkan nomor anggota, password, dan 
+mengklik tombol Login untuk masuk ke dalam portal layanan e-Resources 
+kami. <br>
+                  <br>
+                  <form id="form1" name="form1" method="post" action="index.php" onsubmit="return loginCheck(this);">
+                    <table align="center" width="300" cellspacing="0" cellpadding="0" border="0">
+                      <tbody><tr>
+                        <td align="center" valign="top"><input name="action" id="action" value="" type="hidden">
+                          Nomor Anggota :<br>
+                          <input name="nomor_anggota" class="medium" id="nomor_anggota" size="40" maxlength="40" type="text">
+                          <br>
+                          Password :<br>
+                          <input class="medium" name="password" id="password" size="40" maxlength="40" type="password">
+                          </td>
+                      </tr>
+                      <tr>
+                        <td align="center" valign="top">
+                          <div align="center"> <a onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image4','','images/image_login2.jpg',1)" onclick="doLogin();"><img src="Layanan%20e-Resources%20Perpustakaan%20Nasional%20Republik%20Indonesia_files/image_login.jpg" alt="Klik untuk login" id="Image4" width="113"></a>&nbsp;&nbsp;<a href="http://e-resources.perpusnas.go.id/index2.php" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image37','','images/help2.jpg',1)"><img src="Layanan%20e-Resources%20Perpustakaan%20Nasional%20Republik%20Indonesia_files/help.jpg" alt="Petunjuk penggunaan" name="Image37" id="Image37" height="35" width="42" border="0"></a><br>
+                            
+Lupa Password? <a href="http://keanggotaan.perpusnas.go.id/LupaPassword.aspx" target="_blank">Klik Disini</a>		</div></td>
+                      </tr>
+                    </tbody></table>
+                  </form></td>
+              </tr>
+            </tbody></table></td>
+            <td align="right" valign="top" bgcolor="#DDF5F9"><img src="Layanan%20e-Resources%20Perpustakaan%20Nasional%20Republik%20Indonesia_files/image_eresources.jpg" alt=""></td>
+          </tr>
+        </tbody></table></td>
+      </tr>
+      <tr>
+        <td align="left" valign="top" bgcolor="#F4F4F4"><table width="100%" cellspacing="0" cellpadding="15" border="0">
+          <tbody><tr>
+            <td class="medium"><p>Setiap anggota Perpustakaan Nasional 
+Republik Indonesia (Perpusnas) dan telah memiliki nomor anggota yang 
+sah, berhak memanfaatkan layanan koleksi digital online yang kami 
+langgan (e-Resources).<br> <br>
+              Untuk menjadi anggota Perpusnas, silahkan lakukan pendaftaran secara online melalui <a href="http://keanggotaan.perpusnas.go.id/" target="_blank">http://keanggotaan.perpusnas.go.id</a>,
+ atau dengan mengunjungi gedung layanan Perpusnas di Jalan Salemba Raya 
+28 Jakarta Pusat / Jalan Merdeka Selatan 11 Jakarta Pusat.<br> <br>
+                Petunjuk / panduan penggunaan e-resources <a href="http://e-resources.perpusnas.go.id/index2.php">klik disini</a> , dan jika ada pertanyaan / saran / keluhan terkait layanan koleksi e-Resources ini silahkan disampaikan melalui alamat email <a href="mailto:layanan_eresources@perpusnas.go.id">layanan_eresources@perpusnas.go.id</a> dengan menyebutkan Nama dan nomor anggota.</p>
+              </td>
+          </tr>
+          <tr>
+	            <td align="center" valign="top"><table width="600" cellspacing="0" cellpadding="0" border="0">
+	              <tbody><tr>
+	                <td><img src="Layanan%20e-Resources%20Perpustakaan%20Nasional%20Republik%20Indonesia_files/image_eresources_link_r7_c3.jpg" height="70" width="200"></td>
+	                <td><img src="Layanan%20e-Resources%20Perpustakaan%20Nasional%20Republik%20Indonesia_files/image_eresources_link_r8_c1.jpg" height="70" width="200"></td>
+	                <td><img src="Layanan%20e-Resources%20Perpustakaan%20Nasional%20Republik%20Indonesia_files/image_eresources_link_r8_c3.jpg" height="70" width="200"></td>
+	                </tr>
+	              <tr>
+	                <td><img src="Layanan%20e-Resources%20Perpustakaan%20Nasional%20Republik%20Indonesia_files/image_eresources_link_r2_c5.jpg" height="70" width="200"></td>
+	                <td><img src="Layanan%20e-Resources%20Perpustakaan%20Nasional%20Republik%20Indonesia_files/angkasa.jpg" height="70" width="200"></td>
+	                <td><img src="Layanan%20e-Resources%20Perpustakaan%20Nasional%20Republik%20Indonesia_files/image_eresources_link_r8_c2.jpg" height="70" width="200"></td>
+	                </tr>
+	              <tr>
+	                <td><img src="Layanan%20e-Resources%20Perpustakaan%20Nasional%20Republik%20Indonesia_files/image_eresources_link_r9_c1.jpg" height="70" width="200"></td>
+	                <td><img src="Layanan%20e-Resources%20Perpustakaan%20Nasional%20Republik%20Indonesia_files/image_eresources_link_r11_c2.jpg" height="70" width="200"></td>
+	                <td><img src="Layanan%20e-Resources%20Perpustakaan%20Nasional%20Republik%20Indonesia_files/image_eresources_link_r3_c1.jpg" height="70" width="200"></td>
+	                </tr>
+	              <tr>
+	                <td><img src="Layanan%20e-Resources%20Perpustakaan%20Nasional%20Republik%20Indonesia_files/image_eresources_link_r9_c2.jpg" height="70" width="200"></td>
+	                <td><img src="Layanan%20e-Resources%20Perpustakaan%20Nasional%20Republik%20Indonesia_files/image_eresources_link_r6_c2.jpg" height="70" width="200"></td>
+	                <td><img src="Layanan%20e-Resources%20Perpustakaan%20Nasional%20Republik%20Indonesia_files/image_eresources_link_r3_c6.jpg" height="70" width="200"></td>
+	                </tr>
+	              <tr>
+	                <td><img src="Layanan%20e-Resources%20Perpustakaan%20Nasional%20Republik%20Indonesia_files/image_eresources_link_r4_c1.jpg" height="70" width="200"></td>
+	                <td><img src="Layanan%20e-Resources%20Perpustakaan%20Nasional%20Republik%20Indonesia_files/image_eresources_link_r4_c2.jpg" height="80" width="200"></td>
+	                <td><img src="Layanan%20e-Resources%20Perpustakaan%20Nasional%20Republik%20Indonesia_files/image_eresources_link_r4_c6.jpg" height="70" width="200"></td>
+	                </tr>
+	              <tr>
+	                <td><img src="Layanan%20e-Resources%20Perpustakaan%20Nasional%20Republik%20Indonesia_files/image_eresources_link_r5_c4.jpg" height="70" width="200"></td>
+	                <td><img src="Layanan%20e-Resources%20Perpustakaan%20Nasional%20Republik%20Indonesia_files/image_eresources_link_r9_c3.jpg" height="70" width="200"></td>
+	                <td><img src="Layanan%20e-Resources%20Perpustakaan%20Nasional%20Republik%20Indonesia_files/image_eresources_link_r5_c3.jpg" height="70" width="200"></td>
+	                </tr>
+	              <tr>
+	                <td><img src="Layanan%20e-Resources%20Perpustakaan%20Nasional%20Republik%20Indonesia_files/image_eresources_link_r10_c1.jpg" height="70" width="200"></td>
+	                <td><img src="Layanan%20e-Resources%20Perpustakaan%20Nasional%20Republik%20Indonesia_files/image_eresources_link_r10_c3.jpg" height="70" width="200"></td>
+	                <td><img src="Layanan%20e-Resources%20Perpustakaan%20Nasional%20Republik%20Indonesia_files/image_eresources_link_r10_c2.jpg" height="70" width="200"></td>
+	                </tr>
+	              <tr>
+	                <td><img src="Layanan%20e-Resources%20Perpustakaan%20Nasional%20Republik%20Indonesia_files/image_eresources_link_r2_c1.jpg" height="70" width="200"></td>
+	                <td><img src="Layanan%20e-Resources%20Perpustakaan%20Nasional%20Republik%20Indonesia_files/image_eresources_link_r11_c1.jpg" height="70" width="200"></td>
+			<td><img src="Layanan%20e-Resources%20Perpustakaan%20Nasional%20Republik%20Indonesia_files/image_eresources_link_r5_c1.jpg" height="70" width="200"></td>
+	                </tr>
+	              <tr>
+	                <td><img src="Layanan%20e-Resources%20Perpustakaan%20Nasional%20Republik%20Indonesia_files/image_eresources_link_r2_c2.jpg" height="70" width="200"></td>
+	                <td><img src="Layanan%20e-Resources%20Perpustakaan%20Nasional%20Republik%20Indonesia_files/image_eresources_link_r1_c2.jpg" height="70" width="200"></td>
+	                <td><img src="Layanan%20e-Resources%20Perpustakaan%20Nasional%20Republik%20Indonesia_files/sciencedirect.jpg" height="70" width="200"></td>
+	                </tr>
+	              <tr>
+	                <td><img src="Layanan%20e-Resources%20Perpustakaan%20Nasional%20Republik%20Indonesia_files/image_eresources_link_r1_c1.jpg" height="70" width="200"></td>
+	                <td><img src="Layanan%20e-Resources%20Perpustakaan%20Nasional%20Republik%20Indonesia_files/image_eresources_link_r6_c6.jpg" height="70" width="200"></td>
+	                <td><img src="Layanan%20e-Resources%20Perpustakaan%20Nasional%20Republik%20Indonesia_files/univandalas.jpg" height="70" width="200"></td>
+	                </tr>
+		       <tr>
+                        <td><img src="Layanan%20e-Resources%20Perpustakaan%20Nasional%20Republik%20Indonesia_files/britannica-ad.png" height="70" width="200"></td>
+                        <td><img src="Layanan%20e-Resources%20Perpustakaan%20Nasional%20Republik%20Indonesia_files/britannica-te.png" height="70" width="200"></td>
+                        <td><img src="Layanan%20e-Resources%20Perpustakaan%20Nasional%20Republik%20Indonesia_files/britannica-ki.png" height="70" width="200"></td>
+                        </tr>
+	              <tr>
+			<td><img src="Layanan%20e-Resources%20Perpustakaan%20Nasional%20Republik%20Indonesia_files/neliti.jpg" height="49" width="180"></td>
+			<td><img src="Layanan%20e-Resources%20Perpustakaan%20Nasional%20Republik%20Indonesia_files/westlaw.jpg" height="49" width="180"></td>
+	                <td>&nbsp;</td>
+	                <td>&nbsp;</td>
+	                </tr>
+                </tbody></table></td>
+          </tr>
+         </tbody></table></td>
+        <td width="164" bgcolor="#D7EFF3">&nbsp;</td>
+      </tr>
+      <tr>
+        <td height="115" align="center" width="786" valign="top"><br>
+          <br>
+          <span class="footer">Hak Cipta © 2013 - Perpustakaan Nasional Republik Indonesia</span></td>
+        <td width="164" bgcolor="#DDF5F9">&nbsp;</td>
+      </tr>
+    </tbody></table></td>
+  </tr>
+</tbody></table>
+
+
+
+
+
+
+</body></html>

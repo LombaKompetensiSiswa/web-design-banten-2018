@@ -1,0 +1,24 @@
+section.baca{
+	padding: 50px;
+	position: relative;
+	min-height: 100px;
+	transition: 0.3s;
+	background-color: #333;
+}
+section.baca h1{
+	position: absolute;
+	color: #fff;
+	left: 33%;
+	font-size: 40px;
+}
+@media(max-width: 768px){
+	section.baca h1{
+		left: 22%;
+	}
+}
+@media(max-width: 340px){
+	section.baca h1{
+		left: 25%;
+		font-size: 30px;
+	}
+}

@@ -1,0 +1,14 @@
+<?php
+
+class Admin extends Controller{
+
+	public function index($view)
+	{	
+		if(! isset($_SESSION['data'])){
+			redirect(url('user/login'));
+		}
+		$data['books'] = $this->db->query("SELECT * FROM books ORDER BY id DESC");
+		$data['view'] = $view;
+		$this->view('admin/dashboard', $data);
+	}
+}

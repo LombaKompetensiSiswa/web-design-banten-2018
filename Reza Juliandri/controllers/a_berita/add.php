@@ -1,0 +1,2 @@
+<?php
+template('berita.add');

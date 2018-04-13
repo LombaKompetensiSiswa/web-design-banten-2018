@@ -1,0 +1,36 @@
+RewriteEngine On
+
+RewriteRule ^data-pinjaman$ data_pinjaman.php
+RewriteRule ^data-pinjaman/$ data_pinjaman.php
+
+RewriteRule ^buku$ data_buku.php [L]
+RewriteRule ^buku/$ data_buku.php [L]
+RewriteRule ^tambah-buku$ add_buku.php [L]
+RewriteRule ^tambah-buku/$ add_buku.php [L]
+RewriteRule ^tambah-pinjaman$ add_pinjaman.php [L]
+RewriteRule ^tambah-pinjaman/$ add_pinjaman.php [L]
+
+RewriteRule ^anggota$ data_anggota.php [L]
+RewriteRule ^anggota/$ data_anggota.php [L]
+
+RewriteRule ^kategori$ data_kategori.php
+RewriteRule ^kategori/$ data_kategori.php
+
+RewriteRule ^tambah/pinjaman$ ../action/admin/add_pinjaman.php [L]
+RewriteRule ^tambah/pinjaman/$ ../action/admin/add_pinjaman.php [L]
+RewriteRule ^tambah/buku$ ../action/admin/add_buku.php [L]
+RewriteRule ^tambah/buku/$ ../action/admin/add_buku.php [L]
+RewriteRule ^tambah/kategori$ ../action/admin/add_kategori.php [L]
+RewriteRule ^tambah/kategori/$ ../action/admin/add_kategori.php [L]
+
+
+RewriteRule ^hapus/buku$ ../action/admin/delete_buku.php [L]
+RewriteRule ^hapus/buku/$ ../action/admin/delete_buku.php [L]
+RewriteRule ^hapus/kategori$ ../action/admin/delete_kategori.php [L]
+RewriteRule ^hapus/kategori/$ ../action/admin/delete_kategori.php [L]
+
+RewriteRule ^update/statususer$ ../action/admin/update_status_user.php [L]
+RewriteRule ^update/statususer/$ ../action/admin/update_status_user.php [L]
+
+RewriteRule ^update/statuspinjam$ ../action/admin/update_status_pinjam.php [L]
+RewriteRule ^update/statuspinjam/$ ../action/admin/update_status_pinjam.php [L]

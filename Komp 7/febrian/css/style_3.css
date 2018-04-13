@@ -1,0 +1,71 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+.main {
+	max-width: 1440px;
+	margin: auto;	
+	top: 0;
+}
+body {
+	background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../img/bg2.jpg);
+	background-size: cover;
+}
+
+/*===================== login user ===================*/
+
+.reg {
+	margin: 100px;
+	color: white;
+	font-family: 'calibri';
+}
+.reg h1 {
+	width: 400px;
+		margin: 10px auto;
+		text-align: center;
+		text-transform: uppercase;
+		border:2px solid white;
+	}
+.reg table {
+	font-size: 1.2em;
+	width: 500px;
+	padding:20px; 
+	margin:50px auto 50px;
+}
+.reg input {
+	background: #e0e0e0;
+	color: #383838;
+	border:none;
+	font-size: 20px;
+	outline: none;
+	height: 25px;
+	width: 200px;
+}
+.reg select{
+	width: 100px;
+	height: 20px;
+}
+.reg button {
+	margin-top: 20px;
+	font-size: 1.2em;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: #424242;
+	border:none;
+	background: #f6f6f6;
+	outline: none;
+	margin-left: 170px;
+	text-align: center;
+	width: 100px;
+	height: 40px;
+}
+.reg button:hover {
+	cursor: pointer;
+	background: #cb2121;
+	color: #e1e1e1;
+	border-radius: 10px;
+	box-shadow: 0px 5px 10px #1d1d1d;
+	transition: .2s ease;
+	width: 100px;
+	height: 30px;
+}

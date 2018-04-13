@@ -1,0 +1,41 @@
+section.buku-container{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	padding: 30px;
+}
+.buku-container .buku-gambar{
+	width: 100%;
+	min-height: 150px;
+	margin: 20px;
+}
+#katalog-title i{
+	background-color: #000;
+	color: #fff;
+	padding: 8px;
+	position: absolute;
+	left: 41%;
+	top: -40px;
+	font-size: 30px;
+}
+.btn-pinjam-s{
+	width: 100%;
+	height: 40px;
+	font-size: 18px;
+	cursor: pointer;
+	border: none;
+	background-color: rgba(52, 180, 215, 1);
+	color: #fff;
+	transition: 0.5s;
+}
+.btn-pinjam-s:hover{
+	background-color: rgba(52, 180, 215, 0.7);
+}
+
+.buku-gambar{
+	width: 100%;
+	height: 200px;
+}
+.buku-gambar img{
+	max-height: 100%;
+	max-width: 100%;
+}

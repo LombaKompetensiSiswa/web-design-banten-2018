@@ -1,0 +1,578 @@
+/* ====================================================
+					GENERAL STYLE
+==================================================== */
+html,body{
+	display: block;
+	padding: 0;
+	margin: 0;
+	height: 100% !important;
+	overflow-x: hidden;
+	overflow-y: auto;
+	background: url('../images/bg-home-blur.jpg') top center no-repeat fixed;
+	background-size: cover;
+
+}
+*{
+	font-family: Helvetica;
+}
+*:hover,*:focus,*:active,*:target{
+	outline: none !important;
+}
+.pull-right{
+	float: right;
+}
+.clear-fix{
+	clear: both;
+}
+.full-page{
+	height: 100%;
+}
+.slide{
+	position: fixed;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	background: url('../images/slider.jpg') center top no-repeat fixed;
+	background-size: cover;
+	animation: slide 10s linear infinite;
+}
+.thb{
+	box-shadow: 0 0 10px grey;
+	padding: 10px;
+	border-radius:5px;
+}
+@keyframes slidex{
+	0%,50%,100%{
+		opacity: 0;
+	}
+}
+.theader{
+	background: #842500;
+	color: white;
+	text-align: center;
+}
+tr.bordered td{
+	border-bottom: 1px solid grey;
+}
+.no-br{
+	border-radius: 0 !important;
+}
+/* ====================================================
+				  COOL ALERT DESIGN
+==================================================== */
+@keyframes pop{
+	0%,100%{
+		transform: scale(1.1,1.1);
+	}
+	30%{
+		transform: scale(0.9,0.9);
+	}
+	60%{
+		transform: scale(1.12,1.12);
+	}
+	90%{
+		transform: scale(0.95,0.95);
+	}
+}
+.ca{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.8);
+	padding: 0;
+	margin: 0;
+	z-index: 99999;
+	display: none;
+}
+.ca-content{
+	display: block;
+}
+.ca-dialog{
+	display: block;
+	width: 500px;
+	margin: 12% auto 0;
+	border-radius: 6px;
+	background: white;
+	box-shadow: 0 0 10px #000;
+	animation:pop .2s ease-in;
+}
+.ca-header{
+	padding: 10px !important;
+	font-weight: bold;
+}
+.ca-body{
+	padding: 15px 10px;
+	text-align: center;
+}
+.ca-body .title{
+	font-size: 20px;
+	font-weight: bold;
+}
+.warning-icon{
+	display: block;
+	width: 48px;
+	height: 48px;
+	border: 3px solid orange;
+	color: orange;
+	font-size: 40px;
+	text-align: center;
+	font-weight: bold;
+	border-radius: 50%;
+	margin: 5px auto 20px;
+}
+.ca-body .subtitle{
+	line-height: 25px;
+	font-size: 80%;
+}
+.ca-footer{
+	padding: 10px;
+	text-align: center;
+}
+.ca-btn{
+	padding: 5px 8px;
+	min-width: 80px;
+	margin: 3px 4px;
+	cursor: pointer;
+	border: 4px solid transparent;
+	font-weight: bold;
+	color: white;
+	border-radius: 4px;
+	font-size: 15px;
+	text-decoration: none;
+}
+.ca-btn:focus{
+	border: 4px solid rgba(0,0,0,0.2);
+	background: rgba(0,0,0,1);
+}
+.ca-btn, .ca-btn:hover, .ca-btn:active, .ca-btn:focus{
+	outline: none !important;
+}
+.ca-btn[data-mode=warm]{
+	background: #a00;
+}
+.ca-btn[data-mode=cold]{
+	background: #00b4bc;;;
+}
+/* ====================================================
+				  NAVIGATION STYLE
+==================================================== */
+.navigation{
+	background: #63360a;
+	display: block;
+	width: 100%;
+	padding: 5px;
+	box-shadow: 0 0 10px #000;
+}
+.container-sm{
+	padding: 0 20px;
+}
+.fixed-top{
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+}
+.brand{
+	color: white;
+}
+.navbar-brand{
+	cursor: pointer;
+	padding-top: 5px;
+	font-weight: bold;
+	display: inline-block;
+}
+.logo-navbar{
+	width: 30px;
+	height: 30px;
+	float: left;
+	margin-right: 10px;
+}
+.menu{
+	color: white;
+	margin: 10px 0 0 0;
+	padding: 22px 10px 15px;
+	text-decoration: none;
+}
+.menu:hover{
+	background-color: rgba(0,0,0,0.6);
+}
+.menu.active{
+	font-weight: bold;
+}
+.block{
+	display: block;
+	width: 90%;
+}
+.pd-sm{
+	padding: 12px;
+}
+.mr-sm{
+	margin: 12px;
+}
+label{
+	font-weight: 700;
+	font-size: 14px;
+}
+/* ====================================================
+				  	HOME STYLE
+==================================================== */
+#home{
+	padding-top: 150px !important;
+}
+#home .title{
+	display: block;
+	width: 100%;
+	text-align: center;
+	color: white;
+	margin: 0 auto;
+	font-size: 40px;
+	font-weight: normal;
+}
+#home .comp{
+	color: #fff;
+	text-align: center;
+	margin: 40px auto 0;
+	font-size: 13px;
+	width: 60%;
+}
+#home .icon-wrapper{
+	margin-top: 50px;
+}
+#home .icon{
+	display: inline-block;
+	border-radius: 50%;
+	background: none;
+	padding: 0px;
+	color: #fff;
+	margin: 0 6px;
+	text-align: center;
+	width: 50px;
+	height: 50px;
+}
+#home .icon img{
+	display: block;
+	width: 100%;
+}
+
+/* ====================================================
+				  	ABOUT STYLE
+==================================================== */
+#tentang{
+	background: white;
+}
+#tentang .title{
+
+}
+#tentang *{
+	color: #4a2600;
+}
+#tentang .comp{
+	text-align: center;
+	font-size: 13px;
+	width: 60%;
+	margin: 0 auto;
+	line-height: 16px;
+}
+#tentang .grid{
+	width: 80%;
+	margin: 30px auto 20px;
+}
+section{
+	padding: 80px 0 0 0 !important;
+}
+
+/* ====================================================
+				  	GALERY STYLE
+==================================================== */
+#galeri{
+	background: #fff;
+}
+#galeri *{
+	color: #4a2600;
+}
+#galeri .comp{
+	text-align: center;
+	font-size: 13px;
+	width: 60%;
+	margin: 0 auto;
+	line-height: 16px;
+}
+#galeri .grid{
+	width: 90%;
+	margin: 30px auto 20px;
+}
+#galeri .grid .caption{
+	position: absolute;
+	top: 12px;
+	left: 12px;
+	background: rgba(0,0,0,0.7);
+	display: block;
+	width: 90%;
+	height: 0;
+	text-align: center;
+	color: white;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 14px;
+	padding: 30% 0;
+	opacity: 0;
+	transform: opacity .2s linear;
+	cursor: pointer;
+}
+#galeri .grid .caption:hover {
+	opacity: 1;
+}
+.rel{
+	position: relative;
+}
+
+/* ====================================================
+				  	CONTACT STYLE
+==================================================== */
+#kontak{
+	background: #a95300;
+	padding: 100px 0 30px;
+}
+.input-text{
+	padding: 7px 10px;
+	display: block;
+	width: 90%;
+	font-size: 14px;
+	border-radius: 0;
+	background: white;
+	border: 1px solid #8f8f8f;
+}
+input,button,textarea,label,select{
+	margin: 3px 0;
+}
+.btn{
+	padding:8px 10px;
+	text-align: center;
+	border-radius: 4px;
+	background: grey;
+	color: black;
+	border: none;
+	cursor: pointer;
+	text-decoration: none;
+}
+.btn-default{
+	   background: #653201;
+    color: white;
+}
+/* ====================================================
+				  	FOOTER STYLE
+==================================================== */
+.footer{
+	display: block;
+	padding: 10px;
+	color: white;
+	font-size: 13px;
+	text-align: center;
+	background: #291400;
+}
+/* ====================================================
+				  	GRID SYSTEMS
+==================================================== */
+.col{
+	float: left;
+	display: inline;
+	min-height: 2px;
+}
+.col1{
+	width: 8.333333333333333%;
+}
+.col2{
+	width: 16.66666666666667%;
+}
+.col3{
+	width: 25%;
+}
+.col4{
+	width: 33.33333333333333%;
+}
+.col5{
+	width: 41.66666666666667%;
+}
+.col6{
+	width: 50%;
+}
+.col7{
+	width: 58.33333333333333%;
+}
+.col8{
+	width: 66.66666666666666%;
+}
+.col9{
+	width: 75%;
+}
+.col10{
+	width: 83.33333333333333%;
+}
+.col11{
+	width: 91.66666666666666%;
+}
+.col12{
+	width: 100%;
+}
+
+/* ====================================================
+				  	MODAL STYLE
+==================================================== */
+.modal{
+	position: fixed;
+	z-index: 9999;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.8);
+}
+.modal-content{
+	width: 400px;
+	background: white;
+	border-radius: 5px;
+	margin: 0 auto;
+	margin-top: 100px;
+}
+.modal-header{
+	display: block;
+	padding: 10px;
+	border-bottom: 1px solid #d4d4d4;
+}
+.modal-body{
+	display: block;
+	padding: 10px;
+	border-bottom: 1px solid #d4d4d4;
+}
+.modal-footer{
+	display: block;
+	padding: 10px;
+	text-align: center;
+}
+
+/* ====================================================
+				  	ADMIN STYLE
+==================================================== */
+.title-bar{
+	padding: 10px 5px;
+	font-weight: bold;
+}
+.title-bar-blue{
+	background: #047;;
+	color: white;
+}
+.title-bar-df{
+	background: #fff;;
+	color: grey;
+	text-align: right;
+	padding-right: 20px;
+}
+.panel-bar{
+}
+.panel-bar-blue{
+	background: #065795;;
+	color: white;
+	height: 800px;
+	overflow: hidden;
+}
+.panel-bar-df{
+	background: #fff;;
+	color: grey;
+	text-align: right;
+	padding-right: 20px;
+}
+.box-sh{
+	box-shadow: 0 0 5px #000;
+}
+.panel-bar a{
+	padding: 10px 5px;
+	text-decoration: none;
+	color: #fff;
+	display: block;
+}
+.panel-bar a.active{
+	text-indent: 5px;
+	padding: 10px 5px;
+	text-decoration: none;
+	color: #fff;
+	display: block;
+	background: #043f6d !important;
+}
+
+/* ====================================================
+				  	ANIMATION
+==================================================== */
+@keyframes flash{
+	0%,20%,40%,60%,80%,100%{
+		color: white;
+	}
+	10%,30%,50%,70%,90%{
+		color: #a95300;
+	}
+}
+@keyframes grow{
+	0%,100%{
+		font-size: 30px;
+		color: white;
+	}
+	50%{
+		font-size: 40px;
+		color: red;
+	}
+}
+@keyframes growRotate{
+	0%{
+		transform: scale(1,1) rotate(0deg);
+	}
+	100%{
+		transform: scale(1.1,1.1) rotate(360deg);
+	}
+}
+.growOnHover{
+	transition: transform .4s linear;
+}
+.growOnHover:hover{
+	transform: scale(1.3,1.3) rotate(360deg);
+}
+
+/* ====================================================
+				  RESPONSIVE QUERY
+==================================================== */
+@media screen and (max-width: 960px){
+	.navbar-brand{
+		text-align: center;
+		float: none !important;
+		width: 100%;
+		margin-bottom: 10px;
+	}
+	.logo-navbar{
+		float: none !important;
+	}
+	.menu{
+		padding: 0px 6px !important;
+	}
+	#menu-wrapper{
+		float: none;
+		text-align: center;
+	}
+}
+@media screen and (max-width: 320px){
+	.col{
+		width: 100%;
+	}
+	.container{
+		margin: 0 12px !important;
+	}
+	#kategori{
+		display: block !important;
+	}
+	#grid-footer{
+		padding: 0 12px !important;
+	}
+}

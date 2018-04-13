@@ -1,0 +1,7 @@
+RewriteEngine On
+
+RewriteRule ^data_pinjaman$ data_pinjaman.php
+RewriteRule ^data_pinjaman/$ data_pinjaman.php
+
+RewriteRule ^anggota$ data_anggota.php
+RewriteRule ^anggota/$ data_anggota.php

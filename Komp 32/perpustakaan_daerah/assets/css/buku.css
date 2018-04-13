@@ -1,0 +1,55 @@
+section.hero .custom-search{
+	position: relative;
+	width: 300px;
+	height: 35px;
+	border-bottom: 2px solid #fff;
+	transition: 0.5s;
+	color: #fff;
+}
+section.hero .custom-search input{
+	position: absolute;
+	width: 70%;
+	height: 100%;
+	background: none;
+	border: none;
+	transition: 0.5s;
+	top: -3px;
+	left: 0;
+	color: inherit;
+	font-size: 2em;
+}
+section.hero .custom-search input:focus{
+	background: #000;
+	width: 100%;
+}
+section.hero button{
+	width: 300px;
+	height: 35px;
+	margin-top: 20px;
+	font-size: 16px;
+	cursor: pointer;
+}
+#daftar-buku{
+	background-color: #333;
+	position: absolute;
+	top: 40%;
+	color: #fff;
+	text-decoration: none;
+	padding: 20px 50px;
+}
+@media(max-width: 768px){
+	#daftar-buku{
+		top: 20%;
+	}	
+}
+@media(max-width: 340px){
+	#daftar-buku{
+		background-color: #333;
+		position: absolute;
+		top: 20%;
+		font-size: 12px;
+		color: #fff;
+		text-decoration: none;
+		padding: 10px 20px;
+	}
+}

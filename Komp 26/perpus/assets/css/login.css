@@ -1,0 +1,108 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	background-image: url(../img/bg-login.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center top;
+	height: 700px;
+}
+
+table {
+	width: 100%;
+}
+
+input[type=text], input[type=password] {
+	width: 100%;
+	padding: 10px 14px;
+	border-radius: 4px;
+	border: 1px solid #CCC;
+	margin-bottom: 8px;
+}
+
+input[type=submit] {
+	width: 100%;
+	padding: 14px 10px;
+	cursor: pointer;
+	transition: all 0.4s ease;
+	border: none;
+	background-color: #233554;
+	color: #FFF;
+	font-size: 18px;
+}
+
+input[type=submit]:hover {
+	background-color: #3d91d6;
+}
+
+.container {
+	width: 100%;
+	overflow: hidden;
+}
+
+h3 {
+	font-size: 24px;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+a {
+	text-decoration: none;
+	padding: 10px;
+	display: block;	
+	transition: all 0.4s ease;
+	text-align: right;
+	font-size: 18px;
+	color: #3d91d6;
+}
+
+a:hover {
+	color: #233554;
+}
+
+.frm-login {
+	text-align: center;
+	width: 30%;
+	margin: 100px auto;
+	background-color: #e7e7e7;
+	padding: 10px;
+	border-radius: 4px;
+}
+
+@media screen and (max-width: 980px) {
+	.frm-login {
+	text-align: center;
+	width: 30%;
+	margin: 100px auto;
+	background-color: #e7e7e7;
+	padding: 10px;
+	border-radius: 4px;
+}
+}
+
+@media screen and (max-width: 480px) {
+	.frm-login {
+		width: 100%;
+		margin: 0;
+		float: none;
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 680px) {
+	.frm-login {
+		width: 100%;
+		margin: 0;
+		float: none;
+		text-align: center;
+	}
+}
+
+
+

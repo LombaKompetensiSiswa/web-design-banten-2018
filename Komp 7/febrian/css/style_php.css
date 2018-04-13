@@ -1,0 +1,103 @@
+body {
+	background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../img/bg2.jpg), center;
+	background-attachment: fixed;
+	background-size:cover ; 
+}
+/* ===================== adm web====================*/
+.sidebar img {
+	padding-top: 20px;
+	margin-left: 20px;
+	width:200px;
+	height: auto;
+	border-radius: 50%;
+}
+.sidebar{
+	background: #229d5c;
+	color: white;
+	width: 250px;
+	height: 670px;
+	margin-left:20px;
+	padding-top: 0px;
+	padding-left: 10px;
+}
+.sidebar ul{
+	text-align: left;
+	display: block;
+	padding-top: 10px;
+	margin: 0px auto ;
+}
+
+.sidebar li {
+	display: block;
+	font-weight: 700;
+	font-family: 'calibri',sans-serif;
+	font-size: 1.4em;
+	padding-top: 40px;
+	list-style: none;
+} 
+.sidebar a {
+	text-transform: uppercase;
+	text-decoration-line: none;
+	color: white;
+	font-size: 0.8em;
+	margin-left: 10px;
+
+}
+.sidebar a:hover {
+	text-shadow: 2px 3px 5px black;
+	color: #cb2222;
+}
+/*=====================end adm web ==================*/
+.menu3 {
+	padding: 14px;
+	height: 70px;
+	box-shadow: 0px 1px 20px black;
+}
+.menu3 ul{
+	padding: 25px;
+	display: block;
+	float: right;
+}
+.menu3 li{
+	padding-right: 10px;
+	display: inline-block;
+}
+.menu3 a {
+	font-family:'calibri',sans-serif;
+	font-size: 1.2em;
+	color: white;
+	padding: 10px 20px 10px 20px;
+	font-weight: 600;
+	text-decoration-line: none;
+	color: white;
+}
+
+.menu3 a:hover {
+	color: #b60101;
+}
+/* =============== content ==============*/
+
+.content table{
+	margin: auto;
+	text-align: left;
+	text-transform: uppercase;
+	font-family: 'calibri',sans-serif;
+	color:white;
+	width: 900px;
+	height: 400px;
+}
+.content h1 {
+	text-align: center;
+}
+.content  a{
+	text-decoration-line: none;
+	padding: 3px 8px 3px 8px;
+	color: white;
+	border : 2px solid white;
+}
+.content a:hover {
+	background: white;
+	color: black;
+	border-radius: 6px;
+	transition: .5s ease;
+}

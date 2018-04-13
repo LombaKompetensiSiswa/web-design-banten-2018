@@ -1,0 +1,113 @@
+.navbar{
+	padding: 16px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	color: #fff;
+	background: rgba(0, 0, 0, 0.7);
+	align-items: center;
+	font-size: 18px;
+	position: absolute;
+	width: 100%;
+	z-index: 1;
+	transition: 0.5s;
+}
+.navbar form{
+	justify-self: center;
+}
+.navbar div{
+	justify-self: center;
+}
+.navbar a{
+	color: inherit;
+	text-decoration: none;
+}
+.navbar ul li{
+	list-style-type: none;
+	display: inline-block;
+	margin-right: 20px;
+}
+.navbar .brand{
+	width: 100%;
+	height: 60px;
+	display: grid;
+	grid-template-columns: 20% 80%;
+}
+.navbar .brand img{
+	max-height: 100%;
+	max-width: 100%;
+}
+.navbar-fixed{
+	padding: 10px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	color: #fff;
+	background: rgba(0, 0, 0, 0.7);
+	align-items: center;
+	font-size: 18px;
+	position: fixed;
+	background-color: #000;
+	top: -100px;
+	width: 100%;
+	z-index: 8;
+	transition: 0.5s;
+	visibility: hidden;
+	opacity: 0;
+}
+.navbar-fixed.active{
+	visibility: visible;
+	opacity: 1;
+	top: 0;
+}
+.navbar-fixed a{
+	color: inherit;
+	text-decoration: none;
+}
+.navbar-fixed li{
+	list-style-type: none;
+}
+.navbar-fixed form .search-container{
+	width: 100%;
+}
+.navbar-fixed form input{
+	width: 200px;
+	height: 28px;
+	transition: 0.5s;
+}
+.navbar-fixed form input:focus{
+	width: 300px;
+}
+.navbar-fixed form button{
+	height: 36px;
+}
+.navbar-fixed select{
+	height: 36px;
+	width: 100px;
+}
+@media(max-width: 768px){
+	.navbar .brand{
+		font-size: 14px;
+	}
+}
+@media(max-width: 340px){
+	.navbar .brand img{
+		display: none;
+	}
+	.navbar form{
+		display: none;
+	}	
+	.navbar-fixed form input{
+		width: 100px;
+		height: 28px;
+		transition: 0.5s;
+	}
+	.navbar-fixed form input:focus{
+		width: 100px;
+	}
+	.navbar-fixed form button{
+		height: 36px;
+	}
+	.navbar-fixed select{
+		height: 36px;
+		width: 106px;
+	}
+}

@@ -1,0 +1,300 @@
+*{
+	box-sizing: border-box;
+
+} 
+h1{
+	color: white;
+}
+body{
+	display: block;
+	background: #00ffdc;
+}
+div{
+	display: block;
+}
+.container{
+
+}
+.dindik{
+	width:auto; 
+	height:150px;
+
+}
+.header{
+    background: #4edcd9 url('image/header1.jpg') left center;
+
+	width: auto;
+	height: 200px;
+	position: relative;
+	text-align: left;
+
+}
+.menu-bar{
+	background: #43cc80;
+	border-top-style: solid;
+	border-top-color: red;
+	border-top-width: 7px;
+
+}
+.menu-bar ul li{
+	background: #43cc80;
+	width: auto;
+	height: auto;
+	display: inline-block;
+	list-style: none;
+	padding: 10px;
+	position: relative;
+
+}
+.menu-bar input{
+	width: auto;
+	/*float: right;*/
+	margin-right: 10px
+}
+a{
+	text-decoration: none;
+	color: black;
+	-webkit-font-smoothing:antialiased;
+}
+.dropdown li:hover{
+	opacity: 1;
+}
+.search{
+	margin-top: 140px;
+	margin-right: 10px;
+
+}
+.text-search{
+	display: block;
+	float: right;
+}
+.button-search{
+	float: right;
+	margin-left: 5px
+}
+.header img{
+	width: auto;
+	height: 100%;
+	float: left;
+
+}
+.header .menu-bar ul{
+	float: left;
+	text-align: left;
+	font-family: arial;
+}
+.gambar{
+	width: auto;
+	height: auto;
+	margin: 100px;
+}
+.main-content{
+	width: auto;
+	height: auto;
+	font-size: 18px;
+	border-left: 10px;
+	display: block;
+	text-align: center;
+	font-family: calibri;
+	padding-left:40px;
+	padding-right:40px;
+	padding-bottom:50px;
+
+}
+h4{
+	color: black;
+}
+h5{
+	color: white;
+
+}
+.index-isi{
+	color: white;
+}
+.isi{
+	background: white;
+	width: auto;
+	margin: auto;
+
+}
+.side-bar{
+
+	/*width: 200px;
+	height: 200px;*/
+	font-family: halvetica;
+	display: inline-block;
+	list-style: none;
+	float: right;
+}
+.side-bar ul > li.active > a,
+.side-bar ul > li > a:hover,
+.side-bar ul > li > a:focus,
+.side-bar ul > li.open > a,
+.side-bar ul > li.open > a:hover,
+.side-bar ul > li.open > a:focus {
+	color: #fff;
+	background: #06732A;
+	background-size: cover;
+	text-decoration: none;
+	width: 300px;
+	height: auto;
+	}
+.side-bar ul li{
+	list-style: none;
+	display: inline-block;
+	float: right;
+}
+footer{
+	background: black;
+	padding: 30px 0;
+	color: white;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size:12px;
+	font-family: Lato,Helvetica,sans-serif
+}
+main{
+	background: #190af1 url('image/bg.jpg') center; 
+	width: auto;
+	height: 900px;
+}
+.medsos{
+	background-color: #a7a4a4;
+	float: left;
+	object-position: bottom;
+}
+.medsos img{
+	background-color: white;
+	width: 60px;
+	height: 50px;
+}
+.login{
+	display: block;
+	float: right;
+	margin-top: 10px
+}
+.button-search{
+	float: right;
+}
+a {
+	color: black;
+	text-decoration:none;
+	cursor: pointer;
+	-webkit-transition:color .2s ease-in-out;-moz-transition:color .2s ease-in-out;transition:color .2s ease-in-out;
+}
+.header-navigation ul > li.active > a,
+.header-navigation ul > li > a:hover,
+.header-navigation ul > li > a:focus,
+.header-navigation ul > li.open > a,
+.header-navigation ul > li.open > a:hover,
+.header-navigation ul > li.open > a:focus {
+	color: #fff;
+	background: #06732A;
+	background-size: cover;
+	text-decoration: none;
+	width: 300px;
+	height: auto;
+	}	
+	.dropdwon-menu{
+		display: none;
+	}
+
+	.dropdown-menu:hover .dropdown{
+		opacity: 1;
+	}
+	.galery img{
+		width: 220px;
+		height: 220px;
+		display: inline-flex;
+		padding: 10px;
+		background: white;
+		margin-left: 13px;
+	}
+	.galery{
+
+	}
+	.buku1{
+		float: left;
+		text-align: center;
+		padding: 10px;
+	}
+	.buku2{
+		float: left;
+		text-align: center;
+		padding: 10px;
+
+	}
+	.buku3{
+		float: left;
+		text-align: center;
+		padding: 10px;
+
+	}
+	.buku4{
+		float: left;
+		text-align: center;
+		padding: 10px;
+
+	}
+	.buku5{
+		float: left;
+		text-align: center;
+		padding: 10px;
+
+	}
+	.buku6{
+		float: left;
+		text-align: center;
+		padding: 10px;
+
+	}
+	.item{
+		background: grey;
+		height: 370px;
+		margin:10px;
+	}
+	.item img{
+		margin-left: 30px;
+		margin-bottom: 30px;
+		margin-left: 100px;
+	}
+
+	.table{
+		float: left;
+		margin-left: 100px;
+	}
+	.tambah{
+		color: transparent;
+	}
+	.video video{
+		margin-top: 100px;
+	}
+	.tablebuku{
+		background:grey;
+		justify-content: center;
+		text-align: center;
+	}
+	.cara-box{
+		background:white;
+		width: auto;
+		height: auto;
+		text-align: center;
+	}
+	h1 u {
+		color: black;
+	}
+	.cara-box ol li a{
+		color: blue;
+	}
+	.tableabout{
+		background:grey;
+		text-align: center;
+	}
+	.videoabout{
+	float: right;		
+	}
+	.cara-box h3 a{
+		color: blue;
+	}
+	
